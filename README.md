@@ -7,9 +7,8 @@ Loyout by Figma. 1920x5797
 [Demo](https://layout-by-figma.vercel.app/)
 
 ## Preview
+(https://user-images.githubusercontent.com/105654011/203029911-790a215e-bc61-4451-922d-ef56acde1a99.png)
 
-/avia
-(https://user-images.githubusercontent.com/105654011/203028852-7de33432-fdcc-454c-a93a-9784979ecfea.png)
 
 ## Intro
 
