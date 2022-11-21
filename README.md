@@ -7,7 +7,7 @@ Loyout by Figma. 1920x5797
 [Demo](https://layout-by-figma.vercel.app/)
 
 ## Preview
-[''](https://user-images.githubusercontent.com/105654011/203029911-790a215e-bc61-4451-922d-ef56acde1a99.png)
+![](https://user-images.githubusercontent.com/105654011/203029911-790a215e-bc61-4451-922d-ef56acde1a99.png)
 
 
 ## Intro
