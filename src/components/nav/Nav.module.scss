@@ -1,0 +1,74 @@
+@import "../../common/styles/mixin";
+
+.block {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .languageBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      margin-right: 40px;
+    }
+
+    .language {
+
+      span {
+        @include font('Raleway', normal, 400, 16px, 22px, #7D7D7D);
+
+        &:first-child {
+          color: #D8D8D8;
+        }
+
+        span {
+          margin: 4px;
+        }
+      }
+    }
+  }
+
+  .navBlock {
+    min-width: 551px;
+    min-height: 22px;
+    display: flex;
+    align-items: center;
+
+    nav {
+      a {
+        margin: 12px;
+        @include font('Raleway', normal, 600, 16px, 20px, #7D7D7D);
+        color: #7D7D7D;
+        &:hover{
+          color: #BCBCBC;
+        }
+      }
+
+      .active {
+        color: #BCBCBC;
+
+      }
+    }
+    .btnBlock{
+      display: flex;
+      img{
+        margin: 0 19px;
+      }
+      .basket{
+        margin-left: 14px;
+        width: 54px;
+        height: 54px;
+        border: 1px solid #F5F5F5;
+        border-radius: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+}

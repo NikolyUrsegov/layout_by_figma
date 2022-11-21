@@ -1,0 +1,27 @@
+@import "../../styles/mixin";
+
+.block {
+  width: 282px;
+  min-height: 415px;
+
+  .cartImg {
+    width: 282px;
+    height: 271px;
+  }
+
+  .info {
+    margin-bottom: 24px;
+    .title {
+      @include font('Raleway', normal, 400, 18px, 24px, #333333);
+      margin-bottom: 8px;
+    }
+    .sale{
+      @include font('Raleway', normal, 700, 18px, 22px, #333333);
+    }
+  }
+
+  .buttonBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+}

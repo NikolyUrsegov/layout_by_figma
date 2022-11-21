@@ -1,0 +1,16 @@
+@import "../../styles/mixin";
+
+.block{
+  width: 594px;
+  min-height: 495px;
+  .title{
+    margin-bottom: 40px;
+    .big{
+      @include font('Raleway', normal, 600, 24px, 29px, #333333);
+      margin-bottom: 16px;
+    }
+    .small{
+      @include font('Raleway', normal, 400, 16px, 22px, #7D7D7D);
+    }
+  }
+}

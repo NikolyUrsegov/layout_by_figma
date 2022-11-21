@@ -1,0 +1,119 @@
+@import "../../common/styles/mixin";
+
+.block{
+  width: 100%;
+  height: 936px;
+  padding-left: 234px;
+  overflow: hidden;
+  .container{
+    transform: translateX(99px);
+    width: 1686px;
+    height: 736px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .info{
+      margin-top: 47px;
+      min-width: 662px;
+      height: 663px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .description{
+        min-width: 662px;
+        height: 457px;
+        .txtIcon{
+          position: relative;
+          span{
+            @include font('Raleway', normal, 700, 90px, 104px, #131111);
+            -webkit-text-stroke: 1px #BCBCBC;
+          }
+          .blur{
+            position: absolute;
+            top:0;
+            right: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 105px;
+            height: 105px;
+            background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%);
+          }
+          .blurRed{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            height: 90px;
+            background: radial-gradient(50% 50% at 50% 50%, #F64F00 0%, rgba(246, 79, 0, 0) 100%);
+          }
+          b{
+            @include font('Raleway', normal, 700, 90px, 104px, #F5F5F5);
+            margin-left: 19px;
+          }
+        }
+        .subTitle{
+          margin-top: 40px;
+          width: 490px;
+          min-height: 48px;
+          @include font('Raleway', normal, 400, 18px, 24px, #BCBCBC);
+        }
+        .eMailInp{
+          margin-top: 32px;
+          width: 445px;
+          height: 32px;
+          position: relative;
+
+          input{
+
+            width: 100%;
+            height: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            @include font('Raleway', normal, 400, 16px, 22px, #F5F5F5);
+            &::placeholder{
+              @include font('Raleway', normal, 400, 16px, 22px, #7D7D7D);
+            }
+          }
+          &:before{
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            content: '';
+            background: #7D7D7D;
+            opacity: 0.45;
+          }
+        }
+      }
+      .btn{
+        width: 150px;
+        height: 150px;
+        background: #FFFFFF;
+        border-radius: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+          @include font('Raleway', normal, 600, 16px, 20px, #333333);
+        }
+      }
+    }
+    .imgBlock{
+      width: 736px;
+      height: 736px;
+      border: 1px solid #333333;
+      border-radius: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 655px;
+        height: 655px;
+        border-radius: 500px;
+      }
+    }
+  }
+}

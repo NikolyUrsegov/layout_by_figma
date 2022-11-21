@@ -1,0 +1,93 @@
+@import "../../../common/styles/mixin";
+
+@keyframes circle {0% {transform: rotate(360deg); 100% {transform: rotate(0deg);};}}
+
+.block {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  .item {
+    display: flex;
+    align-items: center;
+    z-index: 20;
+
+    .infoBlock {
+      position: absolute;
+      width: 281px;
+      height: 269px;
+      left: 1162px;
+      top: 307px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .info {
+        width: 281px;
+        height: 112px;
+
+        .bigText {
+          margin-bottom: 10px;
+          @include font('Raleway', normal, 600, 24px, 120%, #F5F5F5);
+        }
+
+        .smallText {
+          width: 177px;
+          @include font('Raleway', normal, 400, 16px, 22px, #F5F5F5);
+        }
+      }
+
+      .circle {
+        width: 125px;
+        height: 125px;
+        border: 1px solid #F5F5F5;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .textCircle{
+          position: absolute;
+          animation: circle 15s linear infinite;
+        }
+      }
+    }
+  }
+
+  .blurBig {
+    z-index: 1;
+    position: absolute;
+    width: 878px;
+    height: 645px;
+    left: 857px;
+    top: 108px;
+    background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%);
+  }
+
+  .blurSmall {
+    z-index: 1;
+    position: absolute;
+    width: 674px;
+    height: 634px;
+    left: 291px;
+    top: 181px;
+    background: radial-gradient(50% 50% at 50% 50%, #F64F00 0%, rgba(246, 79, 0, 0) 100%);
+  }
+
+  .catalog{
+    z-index: 30;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 1428px;
+    top: 168px;
+    @include font('Raleway', normal, 600, 16px, 20px, #333333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 1000px;
+    transform: rotate(15deg);
+  }
+}

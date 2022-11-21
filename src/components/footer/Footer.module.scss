@@ -1,0 +1,178 @@
+@import "../../common/styles/mixin";
+
+.block {
+  width: 100%;
+  height: 671px;
+  padding-top: 100px;
+  background: #F5F5F5;
+
+  .container {
+    position: relative;
+
+    .header {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+
+
+      img {
+        width: 261px;
+        height: 27px;
+      }
+
+      .socialBlock {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+
+        & > :first-child {
+          margin-right: 16px;
+        }
+
+        a {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #7D7D7D;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 19px;
+            height: 21px;
+          }
+        }
+      }
+    }
+
+    .content {
+      width: 1186px;
+      height: 382px;
+      display: flex;
+      justify-content: space-between;
+
+      .info {
+        width: 355px;
+        height: 382px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .items {
+          .item {
+            margin-bottom: 16px;
+
+            h3 {
+              @include font('Raleway', normal, 400, 16px, 22px, #BCBCBC);
+              margin-bottom: 4px;
+
+            }
+
+            span {
+              @include font('Raleway', normal, 400, 16px, 22px, #333333);
+
+            }
+          }
+
+          .group {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+
+            .item {
+              @extend .item;
+            }
+          }
+        }
+
+        .ps {
+          & > :first-child {
+            margin-bottom: 8px;
+          }
+
+          span {
+            display: block;
+            @include font('Raleway', normal, 400, 16px, 22px, #7D7D7D);
+          }
+        }
+      }
+
+      .groups {
+
+        width: 665px;
+        height: 382px;
+        display: grid;
+        grid-template-areas:
+    "about parts"
+    "consumer consumer";
+        grid-template-rows: 182px 144px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 56px;
+
+        h3 {
+          @include font('Raleway', normal, 700, 18px, 22px, #333333);
+          margin-bottom: 24px;
+        }
+
+        a {
+          @include font('Raleway', normal, 400, 16px, 22px, #333333);
+          margin-bottom: 16px;
+        }
+
+        .about {
+          grid-area: about;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .parts {
+          grid-area: parts;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .consumer {
+          grid-area: consumer;
+
+          .linkGroup {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 360px 220px;
+
+            div {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+
+    .btn {
+      position: absolute;
+      top: 0;
+      right: -60px;
+      width: 150px;
+      height: 150px;
+      border: 1px solid #F64F00;
+      border-radius: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      span {
+        text-align: center;
+        @include font('Raleway', normal, 600, 16px, 20px, #F64F00);
+      }
+    }
+
+    .img {
+      position: absolute;
+      bottom: 0;
+      right: -40px;
+    }
+  }
+}

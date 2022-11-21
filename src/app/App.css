@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5{
+  margin: 0;
+}
+a{
+  outline: none;
+  text-decoration: none;
+}
+.App {
+  background: #131111;
+  width: 1920px;
+}
